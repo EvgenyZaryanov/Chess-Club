@@ -1,0 +1,125 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 1.245vw;
+  padding: 0 5.271vw 0 5.271vw;
+  margin: 0 auto;
+}
+
+.info__image {
+  width: 34.7vw;
+  height: 42vw;
+}
+
+.info__content {
+  width: 51.537vw;
+}
+
+.info__title {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.635vw;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #313131;
+  margin-bottom: 4.392vw;
+  margin-top: 0;
+}
+
+.info__table {
+  display: grid;
+  grid-template-columns: 25.769vw 25.769vw;
+  grid-template-rows: repeat(5, 1fr);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info__table-item {
+  display: flex;
+  align-items: center;
+  height: 4.1vw;
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.464vw;
+  line-height: 120%;
+  color: #313131;
+  opacity: 0.7;
+  border-bottom: 2px solid #d0d0d0;
+}
+.info__table-item:nth-child(9),
+.info__table-item:nth-child(10) {
+  border-bottom: none;
+}
+
+.black {
+  opacity: 1;
+  font-weight: 600;
+  border-left: 1px solid #ccc;
+  padding-left: 1.171vw;
+}
+
+span.crossline {
+  text-decoration: 2px solid #f54932 line-through;
+}
+
+.info__text {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.464vw;
+  line-height: 120%;
+  color: #3057a2;
+  margin: 3.514vw 0 0;
+}
+
+@media screen and (max-width: 376px) {
+  .info {
+    flex-direction: column;
+    margin: 9.067vw 0 0;
+    gap: 6.4vw;
+    padding: 0;
+  }
+  .info__image {
+    width: 89.333vw;
+    height: 107.2vw;
+  }
+  .info__content {
+    width: 100%;
+  }
+  .info__title {
+    font-size: 7.467vw;
+    margin-bottom: 11.733vw;
+    margin-top: 0;
+  }
+  .info__table {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .info__table-item {
+    display: flex;
+    align-items: center;
+    height: 6.6vw;
+    font-weight: 400;
+    font-size: 5.333vw;
+    line-height: 110%;
+    color: #313131;
+    opacity: 0.7;
+    border-bottom: none;
+    margin-bottom: 12px;
+  }
+  .black {
+    opacity: 1;
+    font-weight: 600;
+    border-left: none;
+    padding-left: 0;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #d0d0d0;
+  }
+  .info__text {
+    font-size: 4.8vw;
+  }
+}

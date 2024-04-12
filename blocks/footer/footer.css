@@ -1,0 +1,31 @@
+.footer {
+  margin-top: -5px;
+  padding: 0px 5.271vw 0;
+  background: #e9ded4;
+}
+
+.footer__text {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 2.928vw 5.271vw 5.271vw;
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171vw;
+  line-height: 120%;
+  color: #313131;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 377px) {
+  .footer {
+    box-sizing: border-box;
+    padding: 40px 20px 60px;
+    max-width: 375px;
+    margin-top: 0;
+  }
+  .footer__text {
+    font-size: 16px;
+    padding: 0;
+  }
+}

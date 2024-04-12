@@ -1,0 +1,210 @@
+.header {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: url(../../img/main-image.png);
+  filter: sepia(30%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 17.936vw;
+  height: 2.635vw;
+  position: absolute;
+  top: 1.903vw;
+  padding-left: 5.271vw;
+}
+
+.header__content {
+  width: 39.678vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 9.078vw 0px 0px 5.271vw;
+}
+
+.header__title {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.392vw;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #313131;
+  margin: 0px 0px 1.757vw 0px;
+}
+
+span.center {
+  display: flex;
+  justify-content: center;
+}
+span.right {
+  display: flex;
+  justify-content: right;
+}
+
+.header__subtitle {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.318vw;
+  line-height: 130%;
+  text-align: center;
+  color: #313131;
+  margin: 0 0 2.928vw;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.171vw;
+}
+
+.header__button {
+  font-family: 'Golos Text';
+  width: 19.253vw;
+  height: 5.271vw;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.464vw 3.587vw;
+  border-radius: 4.832vw;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.171vw;
+  line-height: 130%;
+  margin-bottom: 9.517vw;
+  cursor: pointer;
+}
+.header__button:hover {
+  background: #fbce51;
+  color: #1f1f1f;
+}
+
+.header__button.moreInfo {
+  background: transparent;
+  border: 2px solid #1f1f1f;
+  color: #1f1f1f;
+}
+.header__button.moreInfo:hover {
+  color: white;
+  background: #1f1f1f;
+}
+
+.running-text {
+  width: 100%;
+  background-color: #f54932;
+  color: #ffffff;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.611vw;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding: 1.318vw 0;
+  white-space: nowrap;
+  animation: scroll linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    height: 216.533vw;
+    position: relative;
+    background: url(../../img/main-image-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header__container {
+    box-sizing: border-box;
+    max-width: 376px;
+    padding: 24vw 4vw 0;
+    margin-bottom: 77.6vw;
+  }
+  .header__logo {
+    width: 56.8vw;
+    height: 8.533vw;
+    position: absolute;
+    top: 4.8vw;
+    padding: 0;
+  }
+  .header__content {
+    width: 89.333vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .header__title {
+    font-size: 9.6vw;
+    margin: 0px 0px 6.4vw 0px;
+  }
+  .header__subtitle {
+    font-size: 4.8vw;
+    margin: 0 0 8.533vw;
+    text-align: left;
+  }
+  .header__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 3.733vw;
+  }
+  .header__button {
+    width: 89.333vw;
+    height: 12.533vw;
+    background: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.464vw 3.587vw;
+    border-radius: 17.6vw;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 4.267vw;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  .header__button.moreInfo {
+    background: #ffffff;
+    opacity: 0.9;
+    border: none;
+    color: #1f1f1f;
+  }
+  .running-text {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    font-size: 4.267vw;
+    padding: 2.667vw 0;
+    margin-top: -10vw;
+    white-space: nowrap;
+    animation: scroll linear infinite;
+    animation-play-state: running;
+  }
+}

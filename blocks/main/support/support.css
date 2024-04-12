@@ -1,0 +1,66 @@
+p {
+  margin: 0;
+}
+
+.support {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4.685vw;
+  margin: 5.857vw 0px 4.685vw;
+  padding: 0 5.271vw 0 5.271vw;
+}
+
+.support__title {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.635vw;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #313131;
+  margin: 0;
+}
+
+span.red {
+  color: #f54932;
+  font-weight: bold;
+}
+
+.support__image {
+  width: 28.843vw;
+  height: 18.302vw;
+}
+
+.space {
+  display: inline;
+}
+
+@media screen and (max-width: 376px) {
+  .support {
+    position: relative;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .support__title {
+    position: relative;
+    margin-top: 0;
+    font-size: 7.467vw;
+  }
+  .support__image {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 89.333vw;
+    height: 56.533vw;
+  }
+  .space {
+    display: inherit;
+    padding-top: 261px;
+  }
+}

@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  max-width: 1366px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 376px) {
+  .main {
+    max-width: 375px;
+    padding: 12.8vw 5.333vw 0;
+    /* margin-bottom: 26.667vw; */
+  }
+}
