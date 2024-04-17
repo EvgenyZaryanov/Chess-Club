@@ -1,4 +1,4 @@
-# Yandex_test_landing
+# Chess Club landing page
 
 ## [ссылка на страницу](https://chess-club-zaryanov.netlify.app/)
 
